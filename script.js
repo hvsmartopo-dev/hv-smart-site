@@ -1,0 +1,1 @@
+function carregarCamera(){const url=document.getElementById('stream').value.trim();const box=document.querySelector('.camera-box');if(!url){alert('Informe a URL da transmissão.');return;}box.innerHTML='<iframe src="'+url.replace(/"/g,'&quot;')+'" style="width:100%;height:430px;border:0" allow="autoplay;fullscreen" allowfullscreen></iframe>';}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HV SMART - Segurança Eletrônica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo">HV <span>SMART</span></div>
+  <nav><a href="#inicio">Início</a><a href="#camera">Câmera ao vivo</a><a href="#servicos">Serviços</a><a href="#contato">Contato</a></nav>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <div>
+    <p class="tag">SEGURANÇA ELETRÔNICA</p>
+    <h1>HV SMART</h1>
+    <h2>AUTOMAÇÃO RESIDENCIAL</h2>
+    <p>Monitoramento e soluções inteligentes para sua segurança.</p>
+    <a class="button" href="#camera">Ver câmera ao vivo</a>
+  </div>
+</section>
+
+<section id="camera" class="section">
+  <p class="tag">MONITORAMENTO</p>
+  <h2>Câmera ao vivo</h2>
+  <div class="camera-box">
+    <div class="camera-placeholder">
+      <div class="camera-icon">◉</div>
+      <h3>Aguardando transmissão</h3>
+      <p>Configure abaixo o endereço da transmissão da sua câmera.</p>
+    </div>
+  </div>
+  <div class="config">
+    <label for="stream">URL da transmissão</label>
+    <input id="stream" type="text" placeholder="https://seu-endereco/stream">
+    <button onclick="carregarCamera()">Conectar câmera</button>
+  </div>
+  <p class="note">Para câmera IP, a transmissão precisa estar acessível pela internet e usar um formato compatível com navegador, como HLS (M3U8), WebRTC ou uma página de reprodução própria.</p>
+</section>
+
+<section id="servicos" class="section cards">
+  <div><h3>CFTV</h3><p>Instalação e configuração de câmeras.</p></div>
+  <div><h3>Alarmes</h3><p>Sistemas de alarme e sensores.</p></div>
+  <div><h3>Automação</h3><p>Controle inteligente de portões e dispositivos.</p></div>
+</section>
+
+<section id="contato" class="contact">
+  <h2>Fale conosco</h2>
+  <p>WhatsApp: (69) 99399-6875</p>
+</section>
+</main>
+
+<footer>© 2026 HV SMART — Segurança Eletrônica</footer>
+<script src="script.js"></script>
+</body>
+</html>
