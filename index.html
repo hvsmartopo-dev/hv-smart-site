@@ -1,59 +1,418 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>HV SMART - Segurança Eletrônica</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HV SMART - Segurança Eletrônica</title>
+
+  <meta name="description"
+        content="HV SMART - Soluções em segurança eletrônica, câmeras, alarmes, controle de acesso e monitoramento.">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<header>
-  <div class="logo">HV <span>SMART</span></div>
-  <nav><a href="#inicio">Início</a><a href="#camera">Câmera ao vivo</a><a href="#servicos">Serviços</a><a href="#contato">Contato</a></nav>
-</header>
 
-<main>
-<section id="inicio" class="hero">
-  <div>
-    <p class="tag">SEGURANÇA ELETRÔNICA</p>
-    <h1>HV SMART</h1>
-    <h2>AUTOMAÇÃO RESIDENCIAL</h2>
-    <p>Monitoramento e soluções inteligentes para sua segurança.</p>
-    <a class="button" href="#camera">Ver câmera ao vivo</a>
-  </div>
-</section>
+  <!-- CABEÇALHO -->
+  <header class="header">
 
-<section id="camera" class="section">
-  <p class="tag">MONITORAMENTO</p>
-  <h2>Câmera ao vivo</h2>
-  <div class="camera-box">
-    <div class="camera-placeholder">
-      <div class="camera-icon">◉</div>
-      <h3>Aguardando transmissão</h3>
-      <p>Configure abaixo o endereço da transmissão da sua câmera.</p>
+    <div class="header-content">
+
+      <a href="#inicio" class="logo">
+        <span class="logo-hv">HV</span>
+        <span class="logo-smart">SMART</span>
+      </a>
+
+      <button class="menu-button" id="menuButton" aria-label="Abrir menu">
+        ☰
+      </button>
+
+      <nav class="navigation" id="navigation">
+        <a href="#inicio">Início</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#monitoramento">Monitoramento</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
     </div>
-  </div>
-  <div class="config">
-    <label for="stream">URL da transmissão</label>
-    <input id="stream" type="text" placeholder="https://seu-endereco/stream">
-    <button onclick="carregarCamera()">Conectar câmera</button>
-  </div>
-  <p class="note">Para câmera IP, a transmissão precisa estar acessível pela internet e usar um formato compatível com navegador, como HLS (M3U8), WebRTC ou uma página de reprodução própria.</p>
-</section>
 
-<section id="servicos" class="section cards">
-  <div><h3>CFTV</h3><p>Instalação e configuração de câmeras.</p></div>
-  <div><h3>Alarmes</h3><p>Sistemas de alarme e sensores.</p></div>
-  <div><h3>Automação</h3><p>Controle inteligente de portões e dispositivos.</p></div>
-</section>
+  </header>
 
-<section id="contato" class="contact">
-  <h2>Fale conosco</h2>
-  <p>WhatsApp: (69) 99399-6875</p>
-</section>
-</main>
 
-<footer>© 2026 HV SMART — Segurança Eletrônica</footer>
-<script src="script.js"></script>
+  <!-- INÍCIO -->
+  <main>
+
+    <section class="hero" id="inicio">
+
+      <div class="hero-content">
+
+        <div class="hero-text">
+
+          <span class="hero-tag">
+            SEGURANÇA ELETRÔNICA
+          </span>
+
+          <h1>
+            Sua segurança
+            <strong>em boas mãos.</strong>
+          </h1>
+
+          <p>
+            Soluções completas em segurança eletrônica
+            para sua residência, empresa ou comércio.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#contato" class="button button-primary">
+              Solicitar orçamento
+            </a>
+
+            <a href="#monitoramento" class="button button-secondary">
+              Ver monitoramento
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-card">
+
+          <div class="camera-icon">
+            <span>◉</span>
+          </div>
+
+          <h2>Monitoramento</h2>
+
+          <p>
+            Acompanhe suas câmeras
+            de qualquer lugar.
+          </p>
+
+          <a href="#monitoramento" class="card-link">
+            Acessar câmeras →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SERVIÇOS -->
+    <section class="section services" id="servicos">
+
+      <div class="section-header">
+
+        <span class="section-tag">
+          NOSSOS SERVIÇOS
+        </span>
+
+        <h2>
+          Segurança completa
+          para você
+        </h2>
+
+        <p>
+          Trabalhamos com soluções modernas para proteger
+          pessoas, empresas e patrimônios.
+        </p>
+
+      </div>
+
+
+      <div class="services-grid">
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            📹
+          </div>
+
+          <h3>Câmeras</h3>
+
+          <p>
+            Instalação e configuração de sistemas
+            de CFTV e câmeras IP.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            🔔
+          </div>
+
+          <h3>Alarmes</h3>
+
+          <p>
+            Sistemas de alarme para residências,
+            empresas e estabelecimentos.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            🔐
+          </div>
+
+          <h3>Controle de acesso</h3>
+
+          <p>
+            Soluções para controle e gerenciamento
+            de entrada e saída.
+          </p>
+
+        </article>
+
+
+        <article class="service-card">
+
+          <div class="service-icon">
+            📡
+          </div>
+
+          <h3>Monitoramento</h3>
+
+          <p>
+            Acesso remoto e monitoramento
+            dos seus equipamentos.
+          </p>
+
+        </article>
+
+      </div>
+
+    </section>
+
+
+    <!-- MONITORAMENTO -->
+    <section class="section monitoring" id="monitoramento">
+
+      <div class="section-header">
+
+        <span class="section-tag">
+          MONITORAMENTO
+        </span>
+
+        <h2>
+          Visualização das câmeras
+        </h2>
+
+        <p>
+          Acesse o monitoramento diretamente pelo site.
+        </p>
+
+      </div>
+
+
+      <div class="camera-panel">
+
+        <div class="camera-header">
+
+          <div>
+            <span class="status-dot"></span>
+            <span>Câmera principal</span>
+          </div>
+
+          <span class="camera-status" id="cameraStatus">
+            OFFLINE
+          </span>
+
+        </div>
+
+
+        <div class="camera-screen" id="cameraScreen">
+
+          <div class="camera-placeholder">
+
+            <div class="camera-placeholder-icon">
+              📹
+            </div>
+
+            <h3>Câmera não conectada</h3>
+
+            <p>
+              O monitoramento será exibido aqui
+              quando a câmera estiver configurada.
+            </p>
+
+            <button
+              class="button button-primary"
+              id="connectCamera">
+              Conectar câmera
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SOBRE -->
+    <section class="section about" id="sobre">
+
+      <div class="about-content">
+
+        <div class="about-text">
+
+          <span class="section-tag">
+            HV SMART
+          </span>
+
+          <h2>
+            Tecnologia e segurança
+            para proteger o que importa.
+          </h2>
+
+          <p>
+            A HV SMART oferece soluções em segurança eletrônica,
+            buscando sempre unir tecnologia, qualidade e
+            atendimento profissional.
+          </p>
+
+          <p>
+            Trabalhamos com instalação e configuração de
+            câmeras, alarmes, controle de acesso e sistemas
+            de monitoramento.
+          </p>
+
+        </div>
+
+
+        <div class="about-highlight">
+
+          <div class="highlight-number">
+            24/7
+          </div>
+
+          <h3>
+            Segurança
+            contínua
+          </h3>
+
+          <p>
+            Tenha acesso às suas soluções de segurança
+            quando precisar.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTATO -->
+    <section class="section contact" id="contato">
+
+      <div class="section-header">
+
+        <span class="section-tag">
+          FALE CONOSCO
+        </span>
+
+        <h2>
+          Vamos proteger seu patrimônio?
+        </h2>
+
+        <p>
+          Entre em contato e solicite um orçamento.
+        </p>
+
+      </div>
+
+
+      <div class="contact-grid">
+
+        <a
+          class="contact-card"
+          href="https://wa.me/"
+          target="_blank"
+          rel="noopener">
+
+          <span class="contact-icon">💬</span>
+
+          <div>
+            <h3>WhatsApp</h3>
+            <p>Fale conosco</p>
+          </div>
+
+        </a>
+
+
+        <a
+          class="contact-card"
+          href="tel:+5500000000000">
+
+          <span class="contact-icon">📞</span>
+
+          <div>
+            <h3>Telefone</h3>
+            <p>Entre em contato</p>
+          </div>
+
+        </a>
+
+
+        <a
+          class="contact-card"
+          href="mailto:contato@hvsmart.com.br">
+
+          <span class="contact-icon">✉️</span>
+
+          <div>
+            <h3>E-mail</h3>
+            <p>Envie uma mensagem</p>
+          </div>
+
+        </a>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- RODAPÉ -->
+  <footer class="footer">
+
+    <div class="footer-content">
+
+      <div class="footer-logo">
+        <span>HV</span> SMART
+      </div>
+
+      <p>
+        Segurança eletrônica e tecnologia.
+      </p>
+
+      <div class="footer-line"></div>
+
+      <p class="copyright">
+        © <span id="year"></span> HV SMART.
+        Todos os direitos reservados.
+      </p>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
 </body>
 </html>
